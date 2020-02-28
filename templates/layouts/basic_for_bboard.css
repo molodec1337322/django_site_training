@@ -1,0 +1,20 @@
+.navigation_general{
+	font-size: 200%;
+	font-family: Arial;
+	text-align: center;
+}
+
+.navigation_select{
+	font-size: 200%;
+	font-family: Arial;
+	text-align: center;
+}
+
+nav{
+	display: block;
+	margin: 10px 0px;
+}
+
+section{
+	margin-left: 170px;
+}
