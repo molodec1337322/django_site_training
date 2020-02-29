@@ -7,7 +7,15 @@
 
 
 {% block content %}
-<h2> Добавление объявления </h2>
+<h2 style="
+	margin-top: 10px;
+	border-radius: 5px;
+    color: #fff;
+    font-family: verdana, 'open sans', sans-serif;
+    padding: 10px 14px 10px 44px;
+    position: relative;
+    box-shadow: 0px 1px 5px #999;
+    background-color: #AFBECB;"> Добавление объявления </h2>
 <form method="post">
 	{% csrf_token %}
 	{{ form.as_p }}

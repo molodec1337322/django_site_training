@@ -5,21 +5,25 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
 	<title>{% block title %} General {% endblock %}</title> 
-	<link rel="stylesheet" type="text/css" href="{% static 'layout/basic_for_bboard.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/basic_for_bboard.css' %}">
 </head>
 <body>
 	<header>
 		<h1>Объявления</h1>
 	</header>
 
-	<nav>
+	<nav class="navigation_general_hrefs">
 		<a class="navigation_general" href="{% url 'index' %}">Главная</a>
-		<a class="navigation_general" href="{% url 'index_bboard' %}">Все объявления</a>
-		<a class="navigation_general" href="{% url 'add' %}">Добавить</a>
-		{% for rubric in rubrics %}
-		<a class="navigation_select" href="{% url 'by_rubric' rubric.pk %}">{{ rubric.name }}</a>
-		{% endfor %}
 	</nav>
+
+	<nav class="navigation_select_hrefs">
+		<a class="navigation_select" href="{% url 'index_bboard' %}">Все объявления</br></a>
+		{% for rubric in rubrics %}
+		<a class="navigation_select" href="{% url 'by_rubric' rubric.pk %}">{{ rubric.name }}</br></a>
+		{% endfor %}
+		<a class="navigation_select" href="{% url 'add' %}">Добавить</br></a>
+	</nav>
+
 	<section>
 		{% block content %}
 		{% endblock %}

@@ -1,0 +1,28 @@
+header{
+	border-radius: 10px;
+    color: #fff;
+    font-family: verdana, 'open sans', sans-serif;
+    padding: 10px 14px 10px 64px;
+    position: relative;
+    box-shadow: 0px 1px 5px #999;
+    background-color: #AFBECB;
+}
+
+body{
+	font-family: Arial;
+}
+
+nav{
+	margin-top: 15px;
+}
+
+.navigation_general{
+	border-radius: 5px;
+    color: #fff;
+    font-family: verdana, 'open sans', sans-serif;
+    padding: 10px 14px 10px 14px;
+    position: relative;
+    box-shadow: 0px 1px 5px #999;
+    background-color: #ACC6DD;
+}
+

@@ -1,0 +1,48 @@
+header{
+	border-radius: 10px;
+    color: #fff;
+    font-family: verdana, 'open sans', sans-serif;
+    padding: 10px 14px 10px 44px;
+    position: relative;
+    box-shadow: 0px 1px 5px #999;
+    background-color: #AFBECB;
+}
+
+.navigation_general_hrefs{
+	margin-top: 15px;
+}
+
+.navigation_general{
+	margin-top: 10px;
+	border-radius: 5px;
+    color: #fff;
+    font-family: verdana, 'open sans', sans-serif;
+    padding: 10px 14px 10px 14px;
+    position: relative;
+    box-shadow: 0px 1px 5px #999;
+    background-color: #ACC6DD;
+}
+
+.navigation_select_hrefs{
+	position: absolute;
+	margin-top: 3.75%;
+	margin-bottom: -25%;
+	margin-right: 90%; 
+}
+
+.navigation_select{
+	display: table;
+	margin-top: 10px;
+	width: 135px; 
+	border-radius: 5px;
+    color: #fff;
+    font-family: verdana, 'open sans', sans-serif;
+    padding: 10px 14px 10px 14px;
+    position: relative;
+    box-shadow: 0px 1px 5px #999;
+    background-color: #ACC6DD;
+}
+
+section{
+	margin-left: 170px;
+}
