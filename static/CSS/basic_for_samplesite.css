@@ -14,11 +14,16 @@ body{
 
 nav{
 	margin-top: 15px;
+	border-radius: 5px;
+	color: #FFFFFF;
+	box-shadow: 0px 1px 5px #999;
+	background-color: #CDE2F4;
 }
 
 .navigation_general{
 	border-radius: 5px;
     color: #fff;
+    width: 500s;
     font-family: verdana, 'open sans', sans-serif;
     padding: 10px 14px 10px 14px;
     position: relative;

@@ -6,6 +6,7 @@
 {% endblock %}
 
 
+
 {% block content %}
 <h2 style="
 	margin-top: 10px;
@@ -16,9 +17,35 @@
     position: relative;
     box-shadow: 0px 1px 5px #999;
     background-color: #AFBECB;"> Добавление объявления </h2>
+{% if request.user.is_active %}
 <form method="post">
 	{% csrf_token %}
 	{{ form.as_p }}
 	<input type="submit" name="Добавить">
 </form>
+{% else %}
+<div>
+	<p style="
+	font-size: 150%;
+	font-family: verdana, 'open sans', sans-serif;"> Вы не имеете прав для добавлнеия новых объявлений </p>
+
+	<a href="{% url 'login' %}" style="
+	border-radius: 5px;
+    color: #fff;
+    font-family: verdana, 'open sans', sans-serif;
+    padding: 10px 14px 10px 14px;
+    position: relative;
+    box-shadow: 0px 1px 5px #999;
+    background-color: #ACC6DD;">Войти в аккаунт</a>
+
+    <a href="{% url 'registration' %}" style="
+	border-radius: 5px;
+    color: #fff;
+    font-family: verdana, 'open sans', sans-serif;
+    padding: 10px 14px 10px 14px;
+    position: relative;
+    box-shadow: 0px 1px 5px #999;
+    background-color: #ACC6DD;">Создать новый аккаунт</a>
+</div>
+{% endif %}
 {% endblock %}
