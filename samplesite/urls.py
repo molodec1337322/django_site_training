@@ -16,10 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from .views import index
+from .views import index, RegistrationFormView, LoginFormView, LogoutView
 
 urlpatterns = [
     path('bboard/', include('bboard.urls'), name='bboard'),
     path('admin/', admin.site.urls, name='admin'),
-    path('', index, name='index')
+    path('', index, name='index'),
+    path('register/', RegistrationFormView.as_view(), name='registration'),
+    path('login/', LoginFormView.as_view(), name='login'),
+    path('logout/', LogoutView.as_view(), name='logout')
 ]
